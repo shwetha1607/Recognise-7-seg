@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notification Options</title>
+</head>
+<body>
+
+	<h2> Email: </h2>
+	<form action="http://localhost:5000/email" method="POST">
+		<h6>Enter target Email ID: <input type="Text" name="emailID"></h6>	
+		<p><input type = "submit" value = "submit" /></p>
+	</form>
+	
+	<h2> SMS: </h2>
+	<form action="http://localhost:5000/sms" method="POST">
+		<h6>Enter target Phone number: <input type="Text" name="smsNum"></h6>
+		<p><input type = "submit" value = "submit" /></p>	
+	</form>
+	
+	<h2> Whatsapp: </h2>
+	<form action="http://localhost:5000/whatsapp" method="POST">
+		<h6>Enter Whatsapp number: <input type="Text" name="WhatsappNum"></h6>	
+		<p><input type = "submit" value = "submit" /></p>
+	</form>
+	<p> Scan this QR code to generate the opt-in keywords and send the message </p>
+	<img src="static/frame.png">
+	
+</body>
+</html>
